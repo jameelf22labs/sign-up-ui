@@ -1,0 +1,136 @@
+.registerContainer {
+  background-color: #ffffff;
+}
+
+.mainContainer {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.leftContainer {
+  width: 50%;
+  height: 100vh;
+}
+
+.leftContainer img {
+  width: 100%;
+  height: 100%;
+}
+
+.rightContainer {
+  width: 50%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rightContainer .form {
+  width: 60%;
+  height: 90%;
+}
+
+.createAccountText {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.loginRedirection {
+  font-size: 17px;
+  font-weight: 400;
+  color: #404040;
+}
+
+.loginRedirection span {
+    text-decoration: underline;
+    font-weight: 500;
+}
+
+.inputContainer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2em;
+}
+
+.label {
+  font-size: 18px;
+  font-weight: 400;
+  color: #666666;
+  margin-bottom: 6px;
+}
+
+.inputField {
+  padding: 1.2em;
+  border-radius: 12px;
+  border-color: #66666659;
+}
+
+.privacyAndPolicy {
+  margin-top: 2em;
+  color: #666666;
+}
+
+.privacyAndPolicy span {
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+.reCaptchaContainer {
+  height: 68px;
+  width: 370px;
+  border: 1px solid #333333;
+  border-radius: 18px;
+  margin-top: 40px;
+}
+
+.reCaptchaItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.checkBox {
+  padding-left: 30px;
+  padding-top: 10px;
+  color: #2d1818;
+}
+
+.checkBox span {
+    margin-left: 6px;
+}
+
+
+input[type="checkbox"] {
+    accent-color: green ;
+}
+
+.captchaIcon img {
+  width: 45px;
+  height: 45px;
+}
+
+.captchaIcon {
+  padding-right: 30px;
+  padding-top: 10px;
+}
+
+.createAccountButtonContainer {
+  margin-top: 30px;
+}
+
+.createAccountButton {
+  padding: 1em;
+  width: 250px;
+  border-radius: 32px;
+  border: none;
+  font-weight: 500;
+  font-size: 22px;
+  background-color: #c3c3c3;
+  color: white;
+}
+
+@media (max-width: 400px) {
+    .mainContainer {
+        flex-direction: column;
+    }
+}
