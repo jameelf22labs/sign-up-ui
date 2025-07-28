@@ -79,8 +79,8 @@
 }
 
 .reCaptchaContainer {
-  height: 68px;
-  width: 370px;
+  height: 7%;
+  width: 65%;
   border: 1px solid #333333;
   border-radius: 18px;
   margin-top: 40px;
@@ -94,7 +94,7 @@
 
 .checkBox {
   padding-left: 30px;
-  padding-top: 10px;
+  padding-top: 5px;
   color: #2d1818;
 }
 
@@ -131,8 +131,55 @@ input[type="checkbox"] {
   color: white;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 768px) {
   .mainContainer {
     flex-direction: column;
+  }
+
+  .createAccountText {
+    font-size: 1.6rem;
+  }
+
+  .loginRedirection {
+    font-size: 14px;
+  }
+
+  .leftContainer,
+  .rightContainer {
+    width: 100%;
+  }
+
+  .leftContainer {
+    height: auto;
+  }
+
+  .rightContainer {
+    margin-bottom: 10em;
+  }
+
+  .leftContainer img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+
+  .checkBox span {
+    font-size: 12px;
+  }
+
+  .reCaptchaContainer {
+    width: 60%;
+  }
+
+  .createAccountButton {
+    padding: 0.5em;
+    width: 100%;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .reCaptchaContainer {
+    width: 100%;
   }
 }
