@@ -17,40 +17,41 @@ const Form = (): JSX.Element => {
       </div>
 
       <div className={Style.inputContainer}>
-        <span className={Style.label}> User name </span>
-        <input type="text" className={Style.inputField} />
+        <label htmlFor="username" className={Style.label}>
+          User name
+        </label>
+        <input id="username" type="text" className={Style.inputField} />
       </div>
 
       <div className={Style.inputContainer}>
-        <span className={Style.label}> Email address </span>
-        <input type="email" className={Style.inputField} />
+        <label htmlFor="email" className={Style.label}>
+          Email address
+        </label>
+        <input id="email" type="email" className={Style.inputField} />
       </div>
 
-      <div className={Style.inputContainer}>
-        <div
+      <div className={Style.inputContainer} style={{ position: "relative" }}>
+        <label htmlFor="password" className={Style.label}>
+          Password
+        </label>
+        <input
+          id="password"
+          type="password"
+          className={Style.inputField}
+          style={{ paddingRight: "40px" }}
+        />
+        <BiHide
           style={{
-            display: "flex",
-            justifyContent: "space-between",
-            position: "relative",
+            width: 25,
+            height: 25,
+            color: "#666666",
+            position: "absolute",
+            right: 10,
+            top: "20%",
+            transform: "translateY(-50%)",
+            cursor: "pointer",
           }}
-        >
-          <div>
-            <span className={Style.label}> Password </span>{" "}
-          </div>
-          <div>
-            <BiHide
-              style={{
-                width: 25,
-                height: 25,
-                color: "666666",
-                position: "absolute",
-                left: 502,
-              }}
-            />
-            <span className={Style.label}>Hide</span>
-          </div>
-        </div>
-        <input type="password" className={Style.inputField} />
+        />
       </div>
 
       <span style={{ fontWeight: 400, color: "#666666", fontSize: 16 }}>
@@ -76,14 +77,12 @@ const Form = (): JSX.Element => {
         </div>
       </div>
 
-      
-
       <div className={Style.createAccountButtonContainer}>
         <button className={Style.createAccountButton}>Create an account</button>
       </div>
 
       <div className={Style.loginRedirection}>
-        <p style={{ marginTop: 10 , marginLeft: 3 }}>
+        <p style={{ marginTop: 10, marginLeft: 3 }}>
           Already have an ccount? <span> Log in </span>{" "}
         </p>
       </div>
