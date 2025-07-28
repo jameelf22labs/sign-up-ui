@@ -86,6 +86,8 @@ const Form = (): JSX.Element => {
           Already have an ccount? <span> Log in </span>{" "}
         </p>
       </div>
+
+      <div style={{ paddingBottom : '5em'}}>  </div>
     </React.Fragment>
   );
 };
